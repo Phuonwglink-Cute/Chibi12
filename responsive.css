@@ -1,0 +1,192 @@
+
+@media (max-width: 980px){
+  .topbar{
+    border-radius:28px;
+    padding:12px 12px 12px 14px;
+  }
+  .site-nav{
+    gap:4px;
+  }
+  .site-nav a{
+    padding:10px 12px;
+  }
+  .about-grid{
+    grid-template-columns:1fr;
+  }
+  .gallery-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    grid-template-rows:repeat(3,minmax(0,1fr));
+    grid-auto-flow:column;
+  }
+}
+@media (max-width: 760px){
+  .section{
+    width:min(100% - 16px, var(--max));
+    padding:18px 0;
+  }
+  .menu-toggle{
+    display:flex;
+  }
+  .site-nav{
+    position:fixed;
+    top:84px;
+    left:50%;
+    transform:translateX(-50%) translateY(-8px);
+    width:min(100% - 16px, 380px);
+    padding:12px;
+    border-radius:26px;
+    background:rgba(255,255,255,.88);
+    border:1px solid rgba(255,160,198,.24);
+    box-shadow:0 20px 50px rgba(255,137,182,.18);
+    display:grid;
+    gap:8px;
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+    transition:.22s ease;
+  }
+  body.nav-open .site-nav{
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto;
+    transform:translateX(-50%) translateY(0);
+  }
+  .site-nav a{
+    text-align:center;
+    background:rgba(255,241,247,.8);
+  }
+  .hero-card{
+    padding:30px 16px 22px;
+  }
+  .avatar-shell{
+    width:132px;
+    height:132px;
+  }
+  .hero-title{
+    font-size:clamp(1.7rem,9vw,2.6rem);
+  }
+  .social-list{
+    gap:10px;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
+  .social-btn{
+    min-height:70px;
+    padding:12px 14px;
+  }
+  .music-card{
+    padding:22px 14px 18px;
+  }
+  .music-cover-wrap{
+    width:min(72vw,240px);
+  }
+  .timeline{
+    grid-template-columns:40px minmax(0,1fr) 40px;
+    gap:8px;
+  }
+  .timeline span{
+    min-width:0;
+    text-align:center;
+  }
+  .controls{
+    width:min(100%,480px);
+    grid-template-columns:repeat(5,minmax(0,1fr));
+    gap:8px;
+  }
+  .control-btn{
+    width:42px;
+    height:42px;
+  }
+  .control-btn.primary{
+    width:54px;
+    height:54px;
+  }
+  .gallery-grid{
+    gap:12px;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    grid-template-rows:repeat(3,minmax(0,1fr));
+    grid-auto-flow:column;
+  }
+  .gallery-item{
+    border-radius:20px;
+  }
+  .about-card{
+    padding:22px 14px 18px;
+  }
+  .about-item{
+    padding:15px 14px;
+    border-radius:20px;
+  }
+  .lightbox img{
+    width:94vw;
+    max-height:76vh;
+  }
+  .lightbox-prev,
+  .lightbox-next{
+    display:none;
+  }
+}
+@media (max-width: 520px){
+  .brand-text small{display:none}
+  .brand-mark{
+    width:36px;
+    height:36px;
+  }
+  .site-nav{
+    top:78px;
+  }
+  .chips{
+    gap:8px;
+  }
+  .chips span{
+    padding:8px 12px;
+    font-size:.84rem;
+  }
+  .social-list{grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px;}
+  .social-btn{min-height:68px; padding:10px 10px;}
+  .social-btn i{width:39px;height:39px;border-radius:14px;}
+  .social-btn strong{font-size:.92rem;}
+  .social-btn small{font-size:.74rem;}
+  .social-btn em{display:none;}
+  .gallery-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    grid-template-rows:repeat(3,minmax(0,1fr));
+    grid-auto-flow:column;
+  }
+  .music-info h3{
+    font-size:1.1rem;
+  }
+  .playlist{
+    padding-top:10px;
+  }
+  .track{
+    padding:12px 12px;
+    gap:10px;
+  }
+  .track-duration{
+    font-size:.78rem;
+  }
+  .about-intro{
+    font-size:.96rem;
+  }
+}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    animation-duration:.01ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.01ms !important;
+  }
+}
+
+@media (max-width: 420px){
+  .about-grid{grid-template-columns:1fr;}
+  .social-list{grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px;}
+  .social-btn{min-height:66px; padding:10px 10px;}
+  .social-btn i{width:38px;height:38px;border-radius:14px;}
+  .social-btn strong{font-size:.9rem;}
+  .social-btn small{font-size:.72rem;}
+  .social-btn em{display:none;}
+  .controls{gap:6px;}
+  .control-btn{width:40px;height:40px;}
+  .control-btn.primary{width:52px;height:52px;}
+}

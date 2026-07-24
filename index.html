@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#ff9ccd" />
+  <meta name="description" content="Phuong Linh Cutee — Sweet Pink V2 Premium v3.2, trang cá nhân nữ tính, sang trọng và cân đối." />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Phuong Linh Cutee | Sweet Pink V2 Premium v3.2</title>
+
+  <link rel="preload" href="background.JPG" as="image" />
+  <link rel="preload" href="avatar.jpg" as="image" />
+  <link rel="preload" href="music.JPG" as="image" />
+  <link rel="preload" href="01.jpg" as="image" />
+  <link rel="preload" href="02.jpg" as="image" />
+  <link rel="preload" href="03.jpg" as="image" />
+  <link rel="preload" href="04.jpg" as="image" />
+  <link rel="preload" href="05.JPG" as="image" />
+  <link rel="preload" href="06.JPG" as="image" />
+  <link rel="preload" href="music1.wav" as="audio" />
+  <link rel="preload" href="music2.wav" as="audio" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" />
+  <script defer src="script.js"></script>
+</head>
+<body class="is-loading">
+  <div id="loadingScreen" class="loading-screen" aria-hidden="true">
+    <div class="loading-card glass">
+      <div class="loading-sparkles" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <div class="loading-ring">
+        <span></span>
+      </div>
+      <strong>Phuong Linh Cutee</strong>
+      <span>Sweet Pink Princess</span>
+      <div class="loading-bar"><i></i></div>
+      <div class="loading-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+
+  <div class="page-bg" aria-hidden="true"></div>
+  <div id="effectsLayer" class="effects" aria-hidden="true"></div>
+
+  <svg class="svg-sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-facebook" viewBox="0 0 24 24"><path d="M14 8.5h2.2V6H14c-2.2 0-3.7 1.5-3.7 3.9V12H8v2.7h2.3V19H13v-4.3h2.4L16 12H13v-2c0-.9.5-1.5 1-1.5Z" fill="currentColor"/></symbol>
+    <symbol id="icon-tiktok" viewBox="0 0 24 24"><path d="M14 3c.3 1.9 1.5 3.6 3 4.4v2.8c-1.4 0-2.6-.4-3.8-1.1v5.6c0 3-2.3 5.3-5.3 5.3S2.7 17.7 2.7 14.7c0-2.9 2.2-5.2 5-5.3v2.8c-1.2.1-2.2 1.1-2.2 2.4 0 1.3 1 2.4 2.4 2.4 1.5 0 2.5-1 2.5-2.5V3H14Z" fill="currentColor"/><path d="M14 3c.5 2.2 2.1 4 4.4 4.6v2.7c-1.6 0-3.1-.4-4.4-1.1V3Z" fill="currentColor" opacity=".78"/></symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="12" cy="12" r="3.7" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.3" fill="currentColor"/></symbol>
+    <symbol id="icon-play" viewBox="0 0 24 24"><path d="M8 5.7v12.6c0 1 1.1 1.7 2 1.1l9.1-6.3c.8-.5.8-1.7 0-2.2L10 4.6c-.9-.6-2 .1-2 1.1Z" fill="currentColor"/></symbol>
+    <symbol id="icon-pause" viewBox="0 0 24 24"><path d="M6.5 5.5h3.6v13H6.5v-13Zm7.4 0h3.6v13h-3.6v-13Z" fill="currentColor"/></symbol>
+    <symbol id="icon-prev" viewBox="0 0 24 24"><path d="M17 6.5v11a.8.8 0 0 1-1.3.6L8.5 12.6a.8.8 0 0 1 0-1.3l7.2-5.5A.8.8 0 0 1 17 6.5Zm-10 0v11a.8.8 0 0 0 1.3.6l7.2-5.5a.8.8 0 0 0 0-1.3l-7.2-5.5A.8.8 0 0 0 7 6.5Z" fill="currentColor"/></symbol>
+    <symbol id="icon-next" viewBox="0 0 24 24"><path d="M7 6.5v11a.8.8 0 0 0 1.3.6l7.2-5.5a.8.8 0 0 0 0-1.3L8.3 5.9A.8.8 0 0 0 7 6.5Zm10 0v11a.8.8 0 0 1-1.3.6l-7.2-5.5a.8.8 0 0 1 0-1.3l7.2-5.5a.8.8 0 0 1 1.3.6Z" fill="currentColor"/></symbol>
+    <symbol id="icon-loop" viewBox="0 0 24 24"><path d="M7.2 7.3h8.7l-1.8-1.8 1.4-1.4 4.1 4.1-4.1 4.1-1.4-1.4 1.8-1.8H7.2a3.3 3.3 0 0 0 0 6.6h2.1v2H7.2a5.3 5.3 0 0 1 0-10.6Zm9.6 9.4h-8.7l1.8 1.8-1.4 1.4-4.1-4.1 4.1-4.1 1.4 1.4-1.8 1.8h8.7a3.3 3.3 0 0 0 0-6.6h-2.1v-2h2.1a5.3 5.3 0 0 1 0 10.6Z" fill="currentColor"/></symbol>
+    <symbol id="icon-volume" viewBox="0 0 24 24"><path d="M5 15h3.2l4 3.4V5.6L8.2 9H5c-.8 0-1.4.6-1.4 1.4v3.2C3.6 14.4 4.2 15 5 15Zm11-1.8a3.2 3.2 0 0 0-2-3V8.1a5.2 5.2 0 0 1 0 9.8v-2.1a3.2 3.2 0 0 0 2-3.1Zm-2-7.2a8 8 0 0 1 0 14.4v-2.2a5.9 5.9 0 0 0 0-10V6Z" fill="currentColor"/></symbol>
+    <symbol id="icon-mute" viewBox="0 0 24 24"><path d="M5 15h3.2l4 3.4V5.6L8.2 9H5c-.8 0-1.4.6-1.4 1.4v3.2C3.6 14.4 4.2 15 5 15Zm11.7-1.2 2.6-2.6 1.4 1.4-2.6 2.6 2.6 2.6-1.4 1.4-2.6-2.6-2.6 2.6-1.4-1.4 2.6-2.6-2.6-2.6 1.4-1.4 2.6 2.6Z" fill="currentColor"/></symbol>
+  </svg>
+
+  <header class="topbar glass">
+    <a class="brand" href="#top">
+      <span class="brand-mark">✿</span>
+      <span class="brand-text">
+        <strong>Phuong Linh Cutee</strong>
+        <small>Sweet Pink Princess</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-controls="siteNav" aria-expanded="false" aria-label="Mở menu">
+      <svg aria-hidden="true"><use href="#icon-menu"></use></svg>
+    </button>
+
+    <nav class="site-nav" id="siteNav">
+      <a href="#home">Trang đầu</a>
+      <a href="#music">Music</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section id="home" class="hero section">
+      <div class="hero-card glass">
+        <div class="hero-glow" aria-hidden="true"></div>
+
+        <div class="avatar-shell">
+          <img class="avatar" src="avatar.jpg" alt="Avatar Phuong Linh Cutee" />
+        </div>
+
+        <h1 class="hero-title">Phuong Linh Cutee</h1>
+        <p class="hero-subtitle">Sweet Pink Princess</p>
+        <p class="hero-text">Một góc nhỏ dịu dàng, nữ tính và sáng bừng theo phong cách hồng premium.</p>
+
+        <div class="chips" aria-label="Highlights">
+          <span>🌸 Cute</span>
+          <span>💎 Elegant</span>
+          <span>🎀 Pink</span>
+          <span>✨ Premium</span>
+        </div>
+
+        <div class="social-list">
+          <a class="social-btn facebook" href="#" target="_blank" rel="noopener">
+            <i><svg aria-hidden="true"><use href="#icon-facebook"></use></svg></i>
+            <span><strong>Facebook</strong><small>Follow me</small></span>
+            <em>↗</em>
+          </a>
+          <a class="social-btn tiktok" href="#" target="_blank" rel="noopener">
+            <i><svg aria-hidden="true"><use href="#icon-tiktok"></use></svg></i>
+            <span><strong>TikTok</strong><small>Short videos</small></span>
+            <em>↗</em>
+          </a>
+          <a class="social-btn instagram" href="#" target="_blank" rel="noopener">
+            <i><svg aria-hidden="true"><use href="#icon-instagram"></use></svg></i>
+            <span><strong>Instagram</strong><small>Lovely moments</small></span>
+            <em>↗</em>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="music" class="section">
+      <div class="section-head">
+        <span class="section-kicker">🎵 Music Player</span>
+        <h2>Now Playing</h2>
+      </div>
+
+      <div class="music-card glass">
+        <div class="music-cover-wrap">
+          <img class="music-cover" src="music.JPG" alt="Ảnh bài hát" />
+        </div>
+
+        <div class="music-info">
+          <h3 id="songTitle">Cưới Luôn Được Không Remix</h3>
+          <p id="artistName">Phuong Linh</p>
+        </div>
+
+        <div class="timeline">
+          <span id="currentTime">00:00</span>
+          <input id="progress" type="range" min="0" max="100" value="0" />
+          <span id="duration">00:00</span>
+        </div>
+
+        <div class="controls" aria-label="Music controls">
+          <button id="volumeBtn" class="control-btn" type="button" aria-label="Bật tắt âm thanh">
+            <svg aria-hidden="true" class="icon-volume"><use href="#icon-volume"></use></svg>
+            <svg aria-hidden="true" class="icon-mute"><use href="#icon-mute"></use></svg>
+          </button>
+          <button id="prevBtn" class="control-btn" type="button" aria-label="Bài trước">
+            <svg aria-hidden="true"><use href="#icon-prev"></use></svg>
+          </button>
+          <button id="playBtn" class="control-btn primary" type="button" aria-label="Phát nhạc">
+            <svg aria-hidden="true" class="icon-play"><use href="#icon-play"></use></svg>
+            <svg aria-hidden="true" class="icon-pause"><use href="#icon-pause"></use></svg>
+          </button>
+          <button id="nextBtn" class="control-btn" type="button" aria-label="Bài tiếp theo">
+            <svg aria-hidden="true"><use href="#icon-next"></use></svg>
+          </button>
+          <button id="repeatBtn" class="control-btn" type="button" aria-label="Lặp bài">
+            <svg aria-hidden="true"><use href="#icon-loop"></use></svg>
+          </button>
+        </div>
+
+        <div class="playlist">
+          <div class="playlist-head">
+            <span>Playlist</span>
+            <small id="trackCount">2 bài</small>
+          </div>
+
+          <button class="track active" data-index="0" type="button">
+            <span class="track-dot">🎵</span>
+            <span class="track-text">
+              <strong>Cưới Luôn Được Không Remix</strong>
+              <small>Phuong Linh</small>
+            </span>
+            <span class="track-duration">--:--</span>
+          </button>
+
+          <button class="track" data-index="1" type="button">
+            <span class="track-dot">🎵</span>
+            <span class="track-text">
+              <strong>Chấp Niệm Trong Em Remix</strong>
+              <small>Phuong Linh</small>
+            </span>
+            <span class="track-duration">--:--</span>
+          </button>
+        </div>
+        <audio id="audio" preload="metadata"></audio>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="section-head">
+        <span class="section-kicker">🖼 Gallery</span>
+        <h2>Album 6 ảnh</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <button class="gallery-item" data-full="01.jpg" type="button"><img src="01.jpg" alt="Ảnh album 01" loading="lazy" /></button>
+        <button class="gallery-item" data-full="02.jpg" type="button"><img src="02.jpg" alt="Ảnh album 02" loading="lazy" /></button>
+        <button class="gallery-item" data-full="03.jpg" type="button"><img src="03.jpg" alt="Ảnh album 03" loading="lazy" /></button>
+        <button class="gallery-item" data-full="04.jpg" type="button"><img src="04.jpg" alt="Ảnh album 04" loading="lazy" /></button>
+        <button class="gallery-item" data-full="05.JPG" type="button"><img src="05.JPG" alt="Ảnh album 05" loading="lazy" /></button>
+        <button class="gallery-item" data-full="06.JPG" type="button"><img src="06.JPG" alt="Ảnh album 06" loading="lazy" /></button>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-head">
+        <span class="section-kicker">🌸 About</span>
+        <h2>Little About Me</h2>
+      </div>
+
+      <div class="about-card glass">
+        <p class="about-intro">Xin chào, mình là <strong>Phuong Linh Cutee</strong> — một góc nhỏ ngọt ngào, tinh tế và đáng yêu.</p>
+
+        <div class="about-grid">
+          <article class="about-item">
+            <span>🎵</span>
+            <div>
+              <strong>Music Lover</strong>
+              <p>Thích những giai điệu dịu dàng, dễ thương và có cảm xúc.</p>
+            </div>
+          </article>
+          <article class="about-item">
+            <span>📸</span>
+            <div>
+              <strong>Lovely Moments</strong>
+              <p>Yêu những bức ảnh xinh xắn và khoảnh khắc nhẹ nhàng.</p>
+            </div>
+          </article>
+          <article class="about-item">
+            <span>💖</span>
+            <div>
+              <strong>Pink Mood</strong>
+              <p>Sở thích là tông hồng pastel, sự mềm mại và cảm giác ấm áp.</p>
+            </div>
+          </article>
+        </div>
+
+        <p class="about-quote">“Mỗi ngày đều là một ngày đẹp.”</p>
+        <p class="about-note">Cảm ơn bạn đã ghé thăm góc nhỏ này ✿</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Made with 💗 by Phuong Linh Cutee</p>
+  </footer>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Đóng ảnh">×</button>
+    <button class="lightbox-prev" id="lightboxPrev" type="button" aria-label="Ảnh trước">‹</button>
+    <img id="lightboxImage" src="" alt="Ảnh phóng to" />
+    <button class="lightbox-next" id="lightboxNext" type="button" aria-label="Ảnh tiếp">›</button>
+  </div>
+</body>
+</html>
